@@ -1,0 +1,23 @@
+<!-- templates/delete.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete Component</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Delete Component</h1>
+        <p>Are you sure you want to delete the following component?</p>
+        <form method="post" action="/delete">
+            <input type="hidden" name="CompID" value="{{.CompID}}">
+            <p><strong>Component ID:</strong> {{.CompID}}</p>
+            <p><strong>Component Name:</strong> {{.CompName}}</p>
+            <p><strong>Description:</strong> {{.Description}}</p>
+            <input type="submit" value="Delete" class="btn btn-delete">
+        </form>
+        <a href="/" class="btn btn-cancel">Cancel</a>
+    </div>
+</body>
+</html>

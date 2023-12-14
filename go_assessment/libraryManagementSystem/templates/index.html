@@ -1,0 +1,28 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component List</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Library Management System</h1>
+        <h2>Component List</h2>
+        <ul class="component-list">
+            {{range .}}
+            <li>
+                <strong>Component ID:</strong> {{.CompID}}<br>
+                <strong>Component Name:</strong> {{.CompName}}<br>
+                <strong>Description:</strong> {{.Description}}<br>
+                <a href="/edit?compID={{.CompID}}" class="btn btn-edit">Edit</a>
+                <a href="/delete?compID={{.CompID}}" class="btn btn-delete">Delete</a>
+            </li>
+            {{end}}
+        </ul>
+        <a href="/create" class="btn btn-create">Create New Component</a>
+    </div>
+</body>
+</html>

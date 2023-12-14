@@ -1,0 +1,25 @@
+<!-- templates/edit.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Component</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Edit Component</h1>
+        <form action="/edit" method="post">
+            <input type="hidden" name="CompID" value="{{.CompID}}">
+            <label for="compName">Component Name:</label>
+            <input type="text" id="compName" name="CompName" value="{{.CompName}}" required>
+            <br>
+            <label for="description">Description:</label>
+            <input type="text" id="description" name="Description" value="{{.Description}}" required>
+            <br>
+            <input type="submit" value="Update" class="btn btn-update">
+        </form>
+        <a href="/" class="btn btn-back">Back to List</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!-- templates/create.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Component</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Create Component</h1>
+        <form action="/create" method="post">
+            <label for="compName">Component Name:</label>
+            <input type="text" id="compName" name="CompName" required>
+            <br>
+            <label for="description">Description:</label>
+            <input type="text" id="description" name="Description" required>
+            <br>
+            <input type="submit" value="Create" class="btn btn-create">
+        </form>
+        <a href="/" class="btn btn-back">Back to List</a>
+    </div>
+</body>
+</html>

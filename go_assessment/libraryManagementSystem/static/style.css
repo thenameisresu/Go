@@ -1,0 +1,97 @@
+/* static/style.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.jobs-list {
+    list-style: none;
+    padding: 0;
+}
+
+.jobs-list li {
+    border: 1px solid #dcdcdc;
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.jobs-list li:hover {
+    transform: scale(1.02);
+}
+
+form {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    filter: brightness(90%);
+}
+
+.btn-edit {
+    background-color: #007bff;
+}
+
+.btn-edit:hover {
+    background-color: #0056b3;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+}
+
+.btn-create {
+    background-color: #28a745;
+}
+
+.btn-create:hover {
+    background-color: #218838;
+}
+
+.btn-back {
+    background-color: #6c757d;
+}
+
+.btn-back:hover {
+    background-color: #5a6268;
+}
+
+.btn-update {
+    background-color: #17a2b8;
+}
+
+.btn-update:hover {
+    background-color: #138496;
+}
+
+.btn-cancel {
+    background-color: #ffc107;
+}
+
+.btn-cancel:hover {
+    background-color: #d39e00;
+}
