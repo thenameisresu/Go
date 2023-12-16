@@ -1,0 +1,36 @@
+<!-- static/login.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Include necessary CSS and JS libraries -->
+</head>
+<body>
+    <h2>Login</h2>
+    <form id="loginForm" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+
+        <button type="button" onclick="submitLogin()">Submit</button>
+        <button type="button" onclick="cancelLogin()">Cancel</button>
+        <a href="#" onclick="forgotPassword()">Forgot Password?</a>
+        <a href="/register">Register</a>
+    </form>
+
+    <!-- Add the forgot password modal -->
+    <div id="forgotPasswordModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeForgotPasswordModal()">&times;</span>
+            <label for="forgotEmail">Enter your email:</label>
+            <input type="text" id="forgotEmail" required>
+            <button type="button" onclick="submitForgotPassword()">Submit</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="/static/login.js"></script>
+</body>
+</html>

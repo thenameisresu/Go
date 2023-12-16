@@ -1,0 +1,33 @@
+<!-- static/register.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Include necessary CSS and JS libraries -->
+</head>
+<body>
+    <h2>Register</h2>
+    <form id="registerForm">
+        <label for="userType">User Type:</label>
+        <select id="userType">
+            <option value="admin">Admin</option>
+            <option value="normal">Normal</option>
+        </select>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+
+        <button type="button" onclick="submitRegister()">Submit</button>
+        <a href="/login">Login</a>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="/static/register.js"></script>
+</body>
+</html>
